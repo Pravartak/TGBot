@@ -15,28 +15,6 @@ updater = telegram.ext.Updater("5604913977:AAGKzut9MfO8sU17WNo3aXRTlESgmiuzz8k",
 
 application = ApplicationBuilder
 
-bot.inlineQuery((start), ctx => {
-    
-    let message = `
-    Welcome to the chat! I am Doraemon Bot
-    `;
-    
-    let results = [
-    
-    {
-    type: 'article',
-    id: '1',
-    title: 'Start Reference',
-    input_message_content: {
-        message_text: message
-    }
-    },
-    description: "Sends start message."
-   ]
-   
-   ctx.inlineQuery(results)
-    })
-
 async def alewaah(update: Update, context: ContextTypes.DEFAULT_TYPE):
       await context.bot.send_message(chat_id=update.effective_chat.id, text="Alewaaaah 😂😂")
 
