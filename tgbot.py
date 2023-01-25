@@ -3,15 +3,19 @@ import telegram.ext
 
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, filters, MessageHandler, InlineQueryHandler
+from os import getenv
+
+BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = getenv("API_ID")
+API_HASH = getenv("API_HASH")
+COMMAND_PREFIXES = getenv("COMMAND_PREFIXES", "#")
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 
-Token = "5604913977:AAGKzut9MfO8sU17WNo3aXRTlESgmiuzz8k"
-
-updater = telegram.ext.Updater("5604913977:AAGKzut9MfO8sU17WNo3aXRTlESgmiuzz8k", update_queue=True)
+updater = telegram.ext.Updater("BOT_TOKEN", update_queue=True)
 
 application = ApplicationBuilder
 
