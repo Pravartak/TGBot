@@ -9,7 +9,7 @@ from pytgcalls import idle
 from pytgcalls.types import AudioPiped
 ...
 chat_id = -1001620434177
-app = PyTgCalls(client)
+app = PyTgCalls()
 app.start()
 app.join_group_call(
    chat_id,
