@@ -4,6 +4,20 @@ import telegram.ext
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, filters, MessageHandler, InlineQueryHandler
 from os import getenv
+from pytgcalls import PyTgCalls
+from pytgcalls import idle
+from pytgcalls.types import AudioPiped
+...
+chat_id = -1001620434177
+app = PyTgCalls(pyrogram)
+app.start()
+app.join_group_call(
+   chat_id,
+   AudioPiped(
+       'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+   )
+)
+idle()
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 API_ID = getenv("API_ID")
