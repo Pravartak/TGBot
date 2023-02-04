@@ -10,7 +10,7 @@ from pytgcalls.types import AudioPiped
 ...
 chat_id = -1001620434177
 app = PyTgCalls(telethon)
-app.start(pyrogram)
+app.start(telethon)
 app.join_group_call(
    chat_id,
    AudioPiped(
