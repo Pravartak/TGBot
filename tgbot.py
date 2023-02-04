@@ -7,10 +7,18 @@ from os import getenv
 from pytgcalls import PyTgCalls
 from pytgcalls import idle
 from pytgcalls.types import AudioPiped
+from pyrogram import client
 ...
+
+app = Client(
+    "my_bot",
+    api_id=API_ID, api_hash=API_HASH,
+    bot_token=BOT_TOKEN
+)
+
 chat_id = -1001620434177
-app = PyTgCalls(telethon)
-app.start(telethon)
+app = PyTgCalls(my_bot)
+app.start(my_bot)
 app.join_group_call(
    chat_id,
    AudioPiped(
