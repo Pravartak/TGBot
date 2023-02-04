@@ -7,7 +7,7 @@ from os import getenv
 from pytgcalls import PyTgCalls
 from pytgcalls import idle
 from pytgcalls.types import AudioPiped
-from pyrogram import client
+from pyrogram import Client
 ...
 
 app = Client(
