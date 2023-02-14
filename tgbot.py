@@ -11,8 +11,8 @@ from pytgcalls.types import AudioPiped
 ...
 
 chat_id = -1001620434177
-app = PyTgCalls('pytgcalls')
-app.start('pytgcalls')
+app = PyTgCalls('pyrogram')
+app.start('pyrogram')
 app.join_group_call(
    chat_id,
    AudioPiped(
