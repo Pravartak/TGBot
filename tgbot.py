@@ -4,6 +4,8 @@ import telegram.ext
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, filters, MessageHandler, InlineQueryHandler
 from os import getenv
+import pyrogram
+from pyrogram import Client
 from pytgcalls import PyTgCalls
 from pytgcalls import idle
 from pytgcalls.types import AudioPiped
